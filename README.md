@@ -25,3 +25,13 @@ var buildDate = require('metalsmith-build-date');
 ```
 
 This will add a global metadata item called 'foo' containing the current timestamp.
+
+Tests
+-----
+   
+`$ npm test`
+   
+Licence
+-------
+
+GPLv2
