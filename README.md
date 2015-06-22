@@ -6,25 +6,25 @@ A [Metalsmith](http://metalsmith.io) plugin that adds a `buildDate` property to 
 Usage
 -----
 
-```
+```javascript
 var buildDate = require('metalsmith-build-date');
 
-   Metalsmith(__dirname)
-   .use(buildDate());
+Metalsmith(__dirname)
+.use(buildDate());
 ```
 
 This will add a global metadata item called 'buildDate' containing the current timestamp.
 
 If you want to call it something other than buildDate, you can pass a different name as an option.
 
-```
+```javascript
 var buildDate = require('metalsmith-build-date');
 
    Metalsmith(__dirname)
    .use(buildDate({ name: 'foo' }));
 ```
 
-This will add a global metadata item called 'foo' containing the current timestamp.
+This will add a global metadata item called `foo` containing the current timestamp.
 
 Tests
 -----
