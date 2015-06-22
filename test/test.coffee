@@ -13,7 +13,7 @@ plugin     = require '..'
 describe 'metalsmith-build-date', () ->
 
    beforeEach (done) ->
-      rimraf 'build', done
+      rimraf __dirname + '/build', done
       
    describe 'with default options', ()->
       
@@ -55,3 +55,7 @@ describe 'metalsmith-build-date', () ->
                should.not.exist(err)
                should.exist(files)
                done()
+
+   afterEach (done) ->
+      rimraf __dirname + '/build', done
+      

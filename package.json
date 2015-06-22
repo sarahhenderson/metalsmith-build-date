@@ -2,6 +2,10 @@
   "name": "metalsmith-build-date",
   "version": "1.0.0",
   "description": "Metalsmith plugin that adds a buildDate property to the metalsmith global metadata.",
+  "repository": {
+     "type": "git",
+     "url": "https://github.com/sarahhenderson/metalsmith-build-date"
+  },
   "main": "index.js",
   "scripts": {
     "test": "npm run build && mocha --compilers coffee:coffee-script/register -R spec --ui bdd",
